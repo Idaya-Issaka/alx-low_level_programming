@@ -1,20 +1,17 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * print_line - prints a line
- * @n: variable
- *
+ * print_line - prints a straight line
+ * @n: parameter
  * Return: 0
  */
 
 void print_line(int n)
 {
-	int a = 0;
-
-	while (a < n && n > 0)
+	while (n-- > 0)
 	{
 		putchar('_');
-		a++;
 	}
 	putchar('\n');
 }
